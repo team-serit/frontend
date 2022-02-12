@@ -1,19 +1,23 @@
 import React from "react";
 
-import { Form } from "./components/form";
 import { Input } from "./components/input";
-import { Button } from "./components/button";
 import { Select } from "./components/select";
 
 function App() {
     return (
-        <Form>
-            <Select />
-            <Select />
-            <Input />
-            <Input />
-            <Button />
-        </Form>
+        <div className="container mx-auto px-4">
+            <div className="">
+                <div className="w-200 shadow sm:rounded-md sm:overflow-hidden">
+                    <form onSubmit={() => {}}>
+                        <Select label="From" />
+                        <Select label="To" />
+                        <Input label="Amount" placeholder="Enter amount" />
+                        <Input label="You will recieve" />
+                        <button type="submit">Connect wallet</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     );
 }
 
