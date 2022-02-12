@@ -1,0 +1,5 @@
+{
+    "private": true,
+    "typings": "input.tsx",
+    "main": "input"
+}
